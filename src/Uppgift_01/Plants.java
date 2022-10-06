@@ -1,8 +1,8 @@
 package Uppgift_01;
 
 abstract class Plants implements Watered {
-    private String name;
-    private double heightInMeters;
+    private final String name;
+    private final double heightInMeters;
     protected double amountOfLiquid;
 
     public Plants(String name, double heightInMeters) {
@@ -10,7 +10,7 @@ abstract class Plants implements Watered {
         this.heightInMeters = heightInMeters;
     }
 
-
+    //Inkapsling
     public String getName() {
         return name;
     }

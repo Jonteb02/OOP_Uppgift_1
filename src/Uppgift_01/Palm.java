@@ -7,9 +7,11 @@ public class Palm extends Plants {
         setAmountOfLiquid();
     }
 
+    // polymorfism
     @Override
     public void setAmountOfLiquid() {
-        amountOfLiquid = 0.5 * getHeightInMeters();
+        double baseLevel = 0.5;
+        amountOfLiquid = baseLevel * getHeightInMeters();
     }
     @Override
     public String howMuchLiquid() {
