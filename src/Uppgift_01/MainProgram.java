@@ -10,13 +10,13 @@ public class MainProgram {
     }
 
     MainProgram() {
-        String extractedName = extractFlower();
+        String extractedName = extractPlant();
         while (!extractedName.equalsIgnoreCase("quit")) {
-            printOutAmountOfWaterFrom(extractedName);
-            extractedName = extractFlower();
+            printAmountOfWater(extractedName);
+            extractedName = extractPlant();
         }
     }
-    private static void printOutAmountOfWaterFrom(String name) {
+    private static void printAmountOfWater(String name) {
         // Polymorfism
         Plants Igge = new Cactus("Igge", 0.20);
         Plants Meatloaf = new CarnivorousPlant("Meatloaf", 0.7);
@@ -35,7 +35,7 @@ public class MainProgram {
         }
     }
 
-    private static String extractFlower() {
+    private static String extractPlant() {
         try {
             String name = JOptionPane.showInputDialog("Vilken växt ska få vätska?");
             if (name.length() > 0 && !name.isBlank()) {
