@@ -2,7 +2,7 @@ package Uppgift_01;
 
 public interface Watered {
 
-    void howMuchLiquid();
+    String howMuchLiquid();
     void setAmountOfLiquid();
     Double getAmountOfLiquid();
 }

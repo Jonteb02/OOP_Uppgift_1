@@ -1,7 +1,5 @@
 package Uppgift_01;
 
-import javax.swing.*;
-
 public class CarnivorousPlant extends Plants {
     private final double baseLevel = 0.1;
     private final double extraSupplement = 0.2;
@@ -16,9 +14,8 @@ public class CarnivorousPlant extends Plants {
         amountOfLiquid = baseLevel + (extraSupplement * getHeightInMeters());
     }
     @Override
-    public void howMuchLiquid() {
-        JOptionPane.showMessageDialog(null,getName() +
-                " behöver " + getAmountOfLiquid() + "l " + typeOfLiquid);
+    public String howMuchLiquid() {
+        return getName() + " behöver " + getAmountOfLiquid() + "l " + typeOfLiquid;
     }
 
 }

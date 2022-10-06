@@ -23,13 +23,13 @@ public class MainProgram {
         Plants laura = new Palm("Laura", 5);
         Plants putte = new Palm("Putte", 1);
         if (name.equalsIgnoreCase(Igge.getName())) {
-            Igge.howMuchLiquid();
+            JOptionPane.showMessageDialog(null, Igge.howMuchLiquid());
         } else if (name.equalsIgnoreCase(laura.getName())) {
-            laura.howMuchLiquid();
+            JOptionPane.showMessageDialog(null, laura.howMuchLiquid());
         } else if (name.equalsIgnoreCase(putte.getName())) {
-            putte.howMuchLiquid();
+            JOptionPane.showMessageDialog(null, putte.howMuchLiquid());
         } else if (name.equalsIgnoreCase(Meatloaf.getName())) {
-            Meatloaf.howMuchLiquid();
+            JOptionPane.showMessageDialog(null, Meatloaf.howMuchLiquid());
         } else {
             JOptionPane.showMessageDialog(null, "Du har ingen växt med det namnet");
         }

@@ -1,7 +1,5 @@
 package Uppgift_01;
 
-import javax.swing.*;
-
 public class Palm extends Plants {
     private final String typeOfLiquid = TypeOfLiquid.KRANVATTEN.getString();
     public Palm(String name, double heightInMeters) {
@@ -14,9 +12,8 @@ public class Palm extends Plants {
         amountOfLiquid = 0.5 * getHeightInMeters();
     }
     @Override
-    public void howMuchLiquid() {
-        JOptionPane.showMessageDialog(null,getName() +
-                " behöver " + getAmountOfLiquid() + "l " + typeOfLiquid);
+    public String howMuchLiquid() {
+        return getName() + " behöver " + getAmountOfLiquid() + "l " + typeOfLiquid;
     }
 
 }
